@@ -1,14 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Lab # 1</title>
+    <style>
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .back{
+            height: 100%;
+            width: 1263px;
+            margin-left: -8px;
+            margin-top: -8px;
+        }
+        .header{
+            background-color: #3d7fb8;
+            display: flex;
+            height: 60px;
+            color: white;
+            padding-left: 40px;
+            padding-top: 25px;
+            font-size: 30px;
+            margin-right: -17px;
+        }
+        .pad{
+            padding-right: 40px;
+        }
+        .pad:hover{
+            text-decoration: underline;
+        }
+        .content{
+            background-color: #5ba8eb;
+            height: 508px;
+            margin-bottom: -8px;
+            margin-right: -17px;
+        }
+        .name{
+            color: white;
+            font-size: 45px;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .name1{
+            font-weight: bold;
+        }
+        .info{
+            display: flex;
+            color: white;
+            font-size: 45px;
+            text-align: center;
+            padding-left: 265px;
+            padding-top: 50px;
+        }
+        .info1{
+            font-weight: bold;
+            color: white;
+        }
+        .info2{
+            display: flex;
+            color: white;
+            font-size: 45px;
+            text-align: center;
+            padding-top: 25px;
+        }
+        .txt{
+            font-size: 30px;
+        }
+    </style>
 </head>
 <script src="js/myscript.js"></script>
 <body>
-    <h1 class="main"> Next </h1>
-    <p>  <b>  text </b></p>
+    <div class = "back">
+        <div class="header">
+            <div class="pad"><a href="../weblab1-DubetsIvan/about.html"> Про завод </a></div>
+            <div class="pad"><a href="../weblab1-DubetsIvan/product.html"> Продукція </a></div>
+        </div>
+        <div class="content">
+            <div class="name">
+                <div> Молочний завод </div>
+                <div class="name1"> "Корівка" </div>
+            </div>
+            <table border="1" style="width: 100%; text-align: center; font-size: 16px; margin-top: 50px;">
+                <tr>
+                    <td style="padding-top: 15px; padding-bottom: 15px;">
+                        <div class="info1">
+                            <div class="txt">450<br>Працівників</div>
+                        </div>
+                    </td>
+                    <td style="padding-top: 15px; padding-bottom: 15px;">
+                        <div class="info1">
+                            <div class="txt">510<br>Позицій</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-top: 15px; padding-bottom: 15px;">
+                        <div class="info1">
+                            <div class="txt">99%<br>Виробів доставляємо через<br>власний логістичний центр</div>
+                        </div>
+                    </td>
+                    <td style="padding-top: 15px; padding-bottom: 15px;">
+                        <div class="info1">
+                            <div class="txt">350<br>Міст України споживають<br>нашу продукцію</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>            
+        </div>
+    </div>
 </body>
 </html>
