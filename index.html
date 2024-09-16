@@ -6,74 +6,210 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Lab # 1</title>
     <style>
-        a{
+        a {
             text-decoration: none;
             color: white;
         }
-        .back{
+        a:hover {
+            color: #ffcc00;
+        }
+        .back {
             height: 100%;
             width: 1263px;
             margin-left: -8px;
             margin-top: -8px;
         }
-        .header{
-            background-color: #3d7fb8;
-            display: flex;
+        .header {
+                    background-color: #3d7fb8;
+                    display: flex;
             height: 60px;
             color: white;
-            padding-left: 40px;
-            padding-top: 25px;
+                    padding-left: 40px;
+                    padding-top: 25px;
             font-size: 30px;
-            margin-right: -17px;
+                    margin-right: -17px;
         }
-        .pad{
-            padding-right: 40px;
+        .header a:first-child {
+            margin-right: 20px;
         }
-        .pad:hover{
+        .pad {
+                            padding-right: 40px;
+        }
+        .pad:hover {
             text-decoration: underline;
         }
-        .content{
-            background-color: #5ba8eb;
+        .content {
+                    background-color: #5ba8eb;
             height: 508px;
             margin-bottom: -8px;
             margin-right: -17px;
         }
-        .name{
+        .name {
             color: white;
             font-size: 45px;
             text-align: center;
-            padding-top: 50px;
+                    padding-top: 50px;
         }
-        .name1{
+        .name1 {
             font-weight: bold;
+                    border-bottom: 2px solid white;
         }
-        .info{
-            display: flex;
+        .info {
+                    display: flex;
             color: white;
             font-size: 45px;
             text-align: center;
-            padding-left: 265px;
-            padding-top: 50px;
-        }
-        .info1{
+                    padding-left: 265px;
+                    padding-top: 50px;
+        }       
+        .info1 {
             font-weight: bold;
             color: white;
         }
-        .info2{
-            display: flex;
+        .info2 {
+                            display: flex;
             color: white;
             font-size: 45px;
             text-align: center;
-            padding-top: 25px;
+                    padding-top: 25px;
         }
-        .txt{
+        .txt         {
             font-size: 30px;
         }
+        table {
+                    border-collapse: collapse;
+        }
+                td {
+                    padding: 15px;
+                    border: 1px solid #fff;
+        }
+        .info1::after {
+            content: " 🏭";
+        }
+        .content:empty {
+                    background-color: #f00;
+        }
+        .unused-styles {
+            /* Селектори атрибутів */
+            [attr] {
+               color: red;
+            }
+            [attr|=value] {
+                color: green;
+            }
+            [attr^=value] {
+                color: blue;
+            }
+
+            /* Псевдокласи */
+            :first-child {
+                font-weight: bold;
+            }
+            :in-range {
+                        background-color: lightblue;
+            }
+            :empty {
+                        display: none;
+            }
+            :first-of-type {
+                        border: 2px solid black;
+            }
+            :last-of-type {
+                                border-bottom: 2px solid red;
+            }
+
+            /* Псевдоелементи */
+            ::first-        line {
+                text-transform: uppercase;
+                   }        
+            ::after {
+                       content: "!";
+                  }
+
+                    /* Границі, заповнювачі та рамки */
+            margin-bottom: 20px;
+                    margin-bottom: 10%;
+            margin-left: 30px;
+                    margin-left: 5%;
+            margin: 40px;
+            margin: 15%;
+            padding: 20px;
+            padding-left: 25px;
+            padding-bottom: 10px;
+            border-right-width: thin;
+            border-right-width: thick;
+            border-bottom-width: thin;
+            border-bottom-width: thick;
+            border-top-width: thin;
+            border-top-width: thick;
+            border-left-color: #333;
+            border-bottom-color: #444;
+            border-right-color: #555;
+            border-right-style: none;
+            border-right-style: ridge;
+            border-right-style: inset;
+            border-right-style: double;
+            border-left-style: none;
+            border-left-style: ridge;
+            border-left-style: inset;
+            border-left-style: double;
+            border-top-style: none;
+            border-top-style: ridge;
+            border-top-style: inset;
+            border-top-style: double;
+
+            /* Позиціювання елементів */
+            display: inline;
+            display: table-row;
+            display: compact;
+            display: block;
+            display: table-column-group;
+            display: table-header-group;
+            position: static;
+            position: relative;
+            z-index: auto;
+            float: left;
+            float: none;
+            clear: none;
+            clear: left;
+            direction: ltr;
+            unicode-bidi: normal;
+            unicode-bidi: bidi-override;
+
+            /* Візуалізація елементів */
+            max-width: 100%;
+            width: 80%;
+            height: 200px;
+            height: 50%;
+            max-height: 500px;
+            max-height: 90%;
+            line-height: normal;
+            line-height: 1.5;
+            vertical-align: baseline;
+            vertical-align: bottom;
+            vertical-align: super;
+            vertical-align: text-top;
+            overflow: visible;
+            overflow: scroll;
+            clip: rect(0px, 100px, 50px, 0px);
+            visibility: visible;
+            visibility: hidden;
+            outline-width: 1px;
+            outline: solid 2px red;
+                    
+            /* Колір фону */
+            color: #000;
+            background-color: #f5f5f5;
+            background-image: url('image.png');
+            background-attachment: scroll;
+            background-position: left;
+            background-position: bottom;
+}
+
     </style>
 </head>
-<script src="js/myscript.js"></script>
 <body>
-    <div class = "back">
+    <div class="back">
         <div class="header">
             <div class="pad"><a href="../weblab1-DubetsIvan/about.html"> Про завод </a></div>
             <div class="pad"><a href="../weblab1-DubetsIvan/product.html"> Продукція </a></div>
@@ -83,26 +219,26 @@
                 <div> Молочний завод </div>
                 <div class="name1"> "Корівка" </div>
             </div>
-            <table border="1" style="width: 100%; text-align: center; font-size: 16px; margin-top: 50px;">
+            <table style="width: 100%; text-align: center; font-size: 16px; margin-top: 50px;">
                 <tr>
-                    <td style="padding-top: 15px; padding-bottom: 15px;">
+                    <td>
                         <div class="info1">
                             <div class="txt">450<br>Працівників</div>
                         </div>
                     </td>
-                    <td style="padding-top: 15px; padding-bottom: 15px;">
+                    <td>
                         <div class="info1">
                             <div class="txt">510<br>Позицій</div>
                         </div>
                     </td>
                 </tr>
                 <tr>
-                    <td style="padding-top: 15px; padding-bottom: 15px;">
+                    <td>
                         <div class="info1">
                             <div class="txt">99%<br>Виробів доставляємо через<br>власний логістичний центр</div>
                         </div>
                     </td>
-                    <td style="padding-top: 15px; padding-bottom: 15px;">
+                    <td>
                         <div class="info1">
                             <div class="txt">350<br>Міст України споживають<br>нашу продукцію</div>
                         </div>
